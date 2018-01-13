@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ClockTest</string>
+    <string name="country_prompt">Choose One</string>
+    <string-array name="country_arrays">
+        <item>Addition</item>
+        <item>Subtraction</item>
+        <item>Multiplication</item>
+        <item>Division</item>
+    </string-array>
+
+</resources>
