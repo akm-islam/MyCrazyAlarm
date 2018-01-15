@@ -6,23 +6,27 @@
     android:layout_height="match_parent"
     tools:context="com.example.mamunjahir.clocktest.main.MainActivity">
 
+    <include
+        android:id="@+id/bar"
+        layout="@layout/app_bar"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"></include>
+
     <TimePicker
         android:id="@+id/simpleTimePicker"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/colorAccent"
-        android:timePickerMode="spinner"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        android:background="@color/c1"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/bar" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@color/colorPrimary"
+        android:layout_height="50dp"
+        android:background="@color/c2"
         android:onClick="Show"
         android:text="Set Alarm"
         android:textColor="@android:color/background_light"
@@ -34,28 +38,33 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@android:color/holo_blue_bright"
-        android:text="TextView"
-        android:textAlignment="gravity"
+        android:layout_height="70dp"
+        android:alpha=".8"
+        android:background="@color/c1"
+        android:gravity="center"
+        android:text="Alarm is off"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+        app:layout_constraintRight_toRightOf="parent" />
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="62dp"
         android:layout_margin="0dp"
-        android:background="@android:color/holo_purple"
+        android:alpha=".8"
+        android:background="@color/c1"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline">
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:id="@+id/textView2"
@@ -77,14 +86,19 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-            />
+        />
+
     </android.support.constraint.ConstraintLayout>
 
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4148728" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height=".5dp"
+        android:alpha=".3"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </android.support.constraint.ConstraintLayout>
