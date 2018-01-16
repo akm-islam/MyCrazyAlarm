@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mamunjahir.myapplication.MainActivity">
+    <item
+        android:id="@+id/tone1"
+        android:orderInCategory="100"
+        android:title="tone1"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/tone2"
+        android:orderInCategory="100"
+        android:title="tone2"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/tone3"
+        android:orderInCategory="100"
+        android:title="tone3"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/tone4"
+        android:orderInCategory="100"
+        android:title="tone4"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/tone5"
+        android:orderInCategory="100"
+        android:title="tone5"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/medium"
+        android:icon="@drawable/ic_contact_mail_black_24dp"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/hard"
+        android:orderInCategory="100"
+        android:title="Info"
+        app:showAsAction="always" />
+
+
+</menu>
