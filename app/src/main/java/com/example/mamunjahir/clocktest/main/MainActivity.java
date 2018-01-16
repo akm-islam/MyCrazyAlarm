@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         tv = findViewById(R.id.textView);
         alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
         spinner = (Spinner) findViewById(R.id.spinner2);
-        Toolbar toolbar=(Toolbar) findViewById(R.id.bar);
-        setSupportActionBar(toolbar);
+       // Toolbar toolbar=(Toolbar) findViewById(R.id.bar);
+        //setSupportActionBar(toolbar);
         numberProblems = new NumberProblems();
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.country_arrays, android.R.layout.simple_spinner_item);
